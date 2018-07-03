@@ -57,8 +57,8 @@ function remove_old_files() {
 	sudo rm -rf /root/glyno
 	sudo rm -rf /root/.glyno
 	sudo rm -rf /root/.glynocore
-    sudo rm -rf glynod
-    sudo rm -rf glyno-cli
+   	sudo rm -rf glynod
+   	sudo rm -rf glyno-cli
 	echo "Done..."
 }
 
@@ -66,10 +66,10 @@ function remove_old_files() {
 function download_wallet() {
 	echo "Downloading wallet..."
 	mkdir /root/glyno
-    cd glyno
+    	cd glyno
 	mkdir /root/.glyno
 	wget https://github.com/GlynoD/wallet/releases/download/v1.0.0/glyno-wallet-linux.tar
-    tar -xvf glyno-wallet-linux.tar
+    	tar -xvf glyno-wallet-linux.tar
 	echo "Done..."
 }
 
