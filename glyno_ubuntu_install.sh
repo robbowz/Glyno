@@ -81,8 +81,8 @@ function configure_firewall() {
 	ufw default deny			&>> ${SCRIPT_LOGFILE}
 	ufw logging on				&>> ${SCRIPT_LOGFILE}
 	ufw allow ssh/tcp			&>> ${SCRIPT_LOGFILE}
-	ufw allow 11888/tcp			&>> ${SCRIPT_LOGFILE}
-	ufw allow 3322/tcp			&>> ${SCRIPT_LOGFILE}
+	ufw allow 7442/tcp			&>> ${SCRIPT_LOGFILE}
+	ufw allow 5983/tcp			&>> ${SCRIPT_LOGFILE}
 	# This will only allow 6 connections every 30 seconds from the same IP address.
 	ufw limit OpenSSH			&>> ${SCRIPT_LOGFILE}
 	ufw --force enable			&>> ${SCRIPT_LOGFILE}
